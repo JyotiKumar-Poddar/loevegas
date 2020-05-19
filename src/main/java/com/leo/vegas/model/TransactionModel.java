@@ -9,6 +9,9 @@ import lombok.NonNull;
 import javax.validation.constraints.NotEmpty;
 import java.math.BigDecimal;
 
+/**
+ * Wallet transaction request model.
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

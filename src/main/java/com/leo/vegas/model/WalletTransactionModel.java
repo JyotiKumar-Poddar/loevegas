@@ -6,6 +6,10 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 
+/**
+ * Transaction  response model
+ */
+
 @Data
 public class WalletTransactionModel {
 

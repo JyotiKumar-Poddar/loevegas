@@ -7,11 +7,27 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+/**
+ * Transaction repository
+ */
+
 @Repository
 public interface WalletTransactionRepository extends CrudRepository<WalletTransaction, Long> {
 
-	List<WalletTransaction> findByWalletAccountUserId(String userId);  //FIXME :check the query
+	/**
+	 * Method  to get the list of transaction by user id
+	 *
+	 * @param userId  user id
+	 * @return list of {@link WalletTransaction}
+	 */
+	List<WalletTransaction> findByWalletAccountUserId(String userId);
 
+	/**
+	 * Method to check if the transaction id is unique.
+	 *
+	 * @param transactionId   transaction id
+	 * @return boolean value true or false
+	 */
 	@Query(value = "select case when count(wt)> 0 then true else false end from WalletTransaction wt where lower(wt.transactionId) like lower(:transactionId)")
 	boolean existsByTransactionId(String transactionId);
 

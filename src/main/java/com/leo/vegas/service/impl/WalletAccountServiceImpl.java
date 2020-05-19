@@ -61,7 +61,7 @@ public class WalletAccountServiceImpl implements WalletAccountService {
 			Optional<WalletAccount> walletAccount = walletAccountRepository.findById(accountId);
 			if (walletAccount.isPresent()) {
 				WalletAccount beforeUpdate = walletAccount.get();
-				log.info("Before Account balance updated to {}  for transaction id {} thread name {}", beforeUpdate.getAvailableBalance(),
+				log.debug("Before Account balance updated to {}  for transaction id {} thread name {}", beforeUpdate.getAvailableBalance(),
 							transactionId, Thread.currentThread().getName());
 				BigDecimal updatedBalance = beforeUpdate.getAvailableBalance().add(amount);
 				beforeUpdate.setAvailableBalance(updatedBalance);

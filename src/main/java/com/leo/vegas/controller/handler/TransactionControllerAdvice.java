@@ -1,5 +1,6 @@
 package com.leo.vegas.controller.handler;
 
+import com.leo.vegas.controller.TransactionController;
 import com.leo.vegas.exception.ApiErrorMessageAndCode;
 import com.leo.vegas.exception.ApiErrorResponse;
 import com.leo.vegas.exception.ApiException;
@@ -16,13 +17,15 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import java.time.LocalDateTime;
 import java.util.Objects;
 
+import static com.leo.vegas.exception.ApiErrorMessageAndCode.internalServerError;
 import static com.leo.vegas.exception.ApiErrorMessageAndCode.malformedRequest;
 import static org.springframework.http.HttpStatus.BAD_REQUEST;
+import static org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR;
 
 /**
  * Advice to handle exception thrown in the controller and return appropriate response.
  */
-@RestControllerAdvice
+@RestControllerAdvice(assignableTypes = {TransactionController.class})
 public class TransactionControllerAdvice extends ResponseEntityExceptionHandler {
 
 
@@ -54,6 +57,17 @@ public class TransactionControllerAdvice extends ResponseEntityExceptionHandler 
 					.statusCode(BAD_REQUEST)
 					.applicationErrorCode(ex.getApplicationErrorCode())
 					.message(ex.getMessage())
+					.timeStamp(LocalDateTime.now())
+					.build();
+		return new ResponseEntity<>(response, response.getStatusCode());
+	}
+
+	@ExceptionHandler(Exception.class)
+	public ResponseEntity<Object> handleConflict() {
+		ApiErrorResponse response = ApiErrorResponse.builder()
+					.statusCode(INTERNAL_SERVER_ERROR)
+					.applicationErrorCode(ApiErrorMessageAndCode.INTERNAL_SERVER_ERROR)
+					.message(internalServerError)
 					.timeStamp(LocalDateTime.now())
 					.build();
 		return new ResponseEntity<>(response, response.getStatusCode());

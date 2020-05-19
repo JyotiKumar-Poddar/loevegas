@@ -17,6 +17,9 @@ import javax.persistence.OneToMany;
 import java.math.BigDecimal;
 import java.util.List;
 
+/**
+ * Entity representing Wallet account
+ */
 
 @Entity
 @Getter

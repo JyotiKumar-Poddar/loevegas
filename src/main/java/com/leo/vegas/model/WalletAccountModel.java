@@ -9,6 +9,9 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+/**
+ * Wallet account response model
+ */
 @Data
 public class WalletAccountModel {
 

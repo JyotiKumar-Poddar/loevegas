@@ -22,3 +22,19 @@ Alternatively you can use the [Spring Boot Gradle plugin](https://docs.spring.io
 ```shell
 gradle bootRun
 ```
+
+# REST API
+
+application have default user that is user1@gmail.com and user id id mandatory. 
+
+## Posting request using curl
+
+### Request
+
+`POST /debit/`
+
+    curl -X POST  http://localhost:8080/credit -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{ "amount": 100, "userId": "user1@gmail.com", "transactionId": "1823wsa70" }'
+
+### Response
+
+    {"transactionId":"1823wsa7099","transactionAmount":100,"transactionStatus":"COMPLETED","transactionType":"CREDIT"}

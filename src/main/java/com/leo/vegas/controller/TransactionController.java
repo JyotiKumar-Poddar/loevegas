@@ -47,16 +47,21 @@ public class TransactionController {
 	 * Method to get wallet account balance
 	 *
 	 * @param userId user id
-	 * @return {@link WalletAccount} containing account info.
+	 * @return {@link com.leo.vegas.model.WalletAccountModel} containing account info.
 	 */
 	@GetMapping("/account/{userId}")
-	public ResponseEntity<?> getAccount(@PathVariable String userId) {
+	public ResponseEntity<?> geAccount(@PathVariable String userId) {
 		log.info("Fetching account details for user id: {}", userId);
 		WalletAccount walletAccount = validateAndGetWalletAccount(userId);
 		return ResponseEntity.ok(TransactionModelMapper.toWalletModelFunc(walletAccount));
 	}
 
-
+	/**
+	 * Method to get list of transactions
+	 *
+	 * @param userId user id
+	 * @return {@link com.leo.vegas.model.WalletTransactionModel} containing account info.
+	 */
 	@GetMapping("/transaction/{userId}")
 	public ResponseEntity<?> getTransaction(@PathVariable String userId) {
 		log.info("Fetching transaction details for user id: {}", userId);
@@ -65,6 +70,12 @@ public class TransactionController {
 		return ResponseEntity.ok(TransactionModelMapper.toWalletTransactionsModelFunc(walletTransaction));
 	}
 
+	/**
+	 * Method for debit transaction
+	 *
+	 * @param transactionModel {@link TransactionModel}
+	 * @return transaction with status {@link com.leo.vegas.model.WalletTransactionModel}
+	 */
 	@PostMapping("/debit")
 	public ResponseEntity<?> debitWalletAccount(@Valid @RequestBody final TransactionModel transactionModel) {
 		log.info("Debit Transaction  request for transaction id: {} ", transactionModel.getTransactionId());
@@ -74,6 +85,12 @@ public class TransactionController {
 		return ResponseEntity.ok(TransactionModelMapper.toWalletTransactionModelFunc(walletTransaction));
 	}
 
+	/**
+	 * Method for credit transaction
+	 *
+	 * @param transactionModel {@link TransactionModel}
+	 * @return transaction with status {@link com.leo.vegas.model.WalletTransactionModel}
+	 */
 	@PostMapping("/credit")
 	public ResponseEntity<?> creditWalletAccount(@Valid @RequestBody final TransactionModel transactionModel) {
 		log.info("Credit Transaction  request for transaction id: {} ", transactionModel.getTransactionId());

@@ -7,6 +7,9 @@ import org.springframework.http.HttpStatus;
 
 import java.time.LocalDateTime;
 
+/**
+ * Error response
+ */
 @Data
 @Builder
 public class ApiErrorResponse {
