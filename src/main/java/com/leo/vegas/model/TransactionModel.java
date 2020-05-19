@@ -1,5 +1,6 @@
 package com.leo.vegas.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.leo.vegas.util.TransactionType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,6 +23,7 @@ public class TransactionModel {
 	@NonNull
 	private String userId;
 
+	@JsonIgnoreProperties
 	private TransactionType transactionType;
 
 	@NonNull
