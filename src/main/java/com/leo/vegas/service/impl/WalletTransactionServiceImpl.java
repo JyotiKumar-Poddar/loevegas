@@ -56,9 +56,9 @@ public class WalletTransactionServiceImpl implements WalletTransactionService {
 			transaction.setTransactionId(transactionModel.getTransactionId());
 			walletTransactionRepository.save(transaction);
 		}
-		if (transactionModel.getTransactionType().equals(TransactionType.DEBIT)) {
+		if (TransactionType.DEBIT.equals(transactionModel.getTransactionType())) {
 			walletAccountServiceImpl.debitWalletAccount(walletAccount.getId(), transactionModel.getAmount(), transactionModel.getTransactionId());
-		} else if (transactionModel.getTransactionType().equals(TransactionType.CREDIT)) {
+		} else if (TransactionType.CREDIT.equals(transactionModel.getTransactionType())) {
 			walletAccountServiceImpl.creditWalletAccount(walletAccount.getId(), transactionModel.getAmount(),
 						transactionModel.getTransactionId());
 		}

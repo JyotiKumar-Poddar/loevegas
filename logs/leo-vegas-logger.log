@@ -14275,3 +14275,489 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2020-05-19 13:08:01,016 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
 2020-05-19 13:08:01,020 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
 2020-05-19 13:08:01,025 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-2 - Shutdown completed.
+2020-05-19 13:46:48,833 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VegasApplication on JKP.local with PID 93958 (/Users/jyotikumarpoddar/dev/dev-java/vegas/build/classes/java/main started by jyotikumarpoddar in /Users/jyotikumarpoddar/dev/dev-java/vegas)
+2020-05-19 13:46:48,840 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: development
+2020-05-19 13:46:48,951 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-19 13:46:48,952 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-19 13:46:49,738 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-19 13:46:49,800 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 52ms. Found 2 JPA repository interfaces.
+2020-05-19 13:46:50,314 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-05-19 13:46:50,322 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-19 13:46:50,323 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-05-19 13:46:50,323 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-19 13:46:50,393 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-05-19 13:46:50,393 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1441 ms
+2020-05-19 13:46:50,554 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-05-19 13:46:50,731 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-05-19 13:46:50,737 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data'
+2020-05-19 13:46:52,068 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 13:46:52,098 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-05-19 13:46:52,627 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-19 13:46:52,862 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-19 13:46:53,102 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-19 13:46:53,139 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-19 13:46:53,171 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-19 13:46:53,174 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VegasApplication in 4.909 seconds (JVM running for 5.806)
+2020-05-19 13:46:53,627 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(3)-192.168.43.74] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-19 13:46:53,628 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-192.168.43.74] Initializing Servlet 'dispatcherServlet'
+2020-05-19 13:46:53,635 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-192.168.43.74] Completed initialization in 7 ms
+2020-05-19 13:47:20,589 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-1] Credit Transaction  request for transaction id: 18823wsa70 
+2020-05-19 13:47:20,622 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [com.leo.vegas.exception.ApiException: Transaction id already exists]
+2020-05-19 13:47:32,366 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-2] Credit Transaction  request for transaction id: 1823wsa70 
+2020-05-19 13:47:32,422 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-8080-exec-2] Before Account balance updated to 200.00  for transaction id 1823wsa70 thread name http-nio-8080-exec-2
+2020-05-19 13:47:32,434 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-8080-exec-2] Account balance updated to 300.00  for transaction id 1823wsa70
+2020-05-19 13:47:39,303 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-3] Credit Transaction  request for transaction id: 1823wsa70 
+2020-05-19 13:47:39,305 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [com.leo.vegas.exception.ApiException: Invalid User]
+2020-05-19 13:48:35,004 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-19 13:48:35,006 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 13:48:35,009 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-05-19 13:48:35,011 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-05-19 13:48:40,793 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VegasApplication on JKP.local with PID 93974 (/Users/jyotikumarpoddar/dev/dev-java/vegas/build/classes/java/main started by jyotikumarpoddar in /Users/jyotikumarpoddar/dev/dev-java/vegas)
+2020-05-19 13:48:40,796 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: development
+2020-05-19 13:48:40,838 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-19 13:48:40,838 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-19 13:48:41,494 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-19 13:48:41,546 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 45ms. Found 2 JPA repository interfaces.
+2020-05-19 13:48:42,107 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-05-19 13:48:42,115 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-19 13:48:42,115 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-05-19 13:48:42,116 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-19 13:48:42,182 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-05-19 13:48:42,182 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1344 ms
+2020-05-19 13:48:42,332 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-05-19 13:48:42,471 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-05-19 13:48:42,477 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data'
+2020-05-19 13:48:43,577 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 13:48:43,601 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-05-19 13:48:44,230 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-19 13:48:44,331 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-19 13:48:44,558 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-19 13:48:44,593 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-19 13:48:44,621 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-19 13:48:44,624 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VegasApplication in 4.464 seconds (JVM running for 5.681)
+2020-05-19 13:48:45,077 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(3)-192.168.43.74] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-19 13:48:45,078 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-192.168.43.74] Initializing Servlet 'dispatcherServlet'
+2020-05-19 13:48:45,084 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-192.168.43.74] Completed initialization in 6 ms
+2020-05-19 13:49:24,160 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-1] Credit Transaction  request for transaction id: 1823wsa70 
+2020-05-19 13:49:30,774 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [com.leo.vegas.exception.ApiException: Invalid User]
+2020-05-19 13:51:01,332 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-19 13:51:01,333 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 13:51:01,338 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-05-19 13:51:01,340 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-05-19 13:51:26,549 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VegasApplication on JKP.local with PID 94002 (/Users/jyotikumarpoddar/dev/dev-java/vegas/build/classes/java/main started by jyotikumarpoddar in /Users/jyotikumarpoddar/dev/dev-java/vegas)
+2020-05-19 13:51:26,552 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: development
+2020-05-19 13:51:26,591 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-19 13:51:26,591 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-19 13:51:27,145 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-19 13:51:27,189 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 39ms. Found 2 JPA repository interfaces.
+2020-05-19 13:51:27,595 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-05-19 13:51:27,601 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-19 13:51:27,602 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-05-19 13:51:27,602 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-19 13:51:27,656 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-05-19 13:51:27,657 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1066 ms
+2020-05-19 13:51:27,780 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-05-19 13:51:27,910 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-05-19 13:51:27,916 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data'
+2020-05-19 13:51:28,810 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 13:51:28,834 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-05-19 13:51:29,281 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-19 13:51:29,522 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-19 13:51:29,738 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-19 13:51:29,776 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-19 13:51:29,808 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-19 13:51:29,810 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VegasApplication in 3.782 seconds (JVM running for 5.115)
+2020-05-19 13:51:30,176 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(3)-192.168.43.74] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-19 13:51:30,177 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-192.168.43.74] Initializing Servlet 'dispatcherServlet'
+2020-05-19 13:51:30,182 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-192.168.43.74] Completed initialization in 5 ms
+2020-05-19 13:51:36,132 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-1] Credit Transaction  request for transaction id: 1823wsa70 
+2020-05-19 13:51:36,155 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [com.leo.vegas.exception.ApiException: Invalid User]
+2020-05-19 13:52:18,094 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-19 13:52:18,096 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 13:52:18,100 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-05-19 13:52:18,102 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-05-19 13:52:40,520 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VegasApplication on JKP.local with PID 94025 (/Users/jyotikumarpoddar/dev/dev-java/vegas/build/classes/java/main started by jyotikumarpoddar in /Users/jyotikumarpoddar/dev/dev-java/vegas)
+2020-05-19 13:52:40,524 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: development
+2020-05-19 13:52:40,586 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-19 13:52:40,586 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-19 13:52:41,192 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-19 13:52:41,232 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 35ms. Found 2 JPA repository interfaces.
+2020-05-19 13:52:41,651 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-05-19 13:52:41,657 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-19 13:52:41,658 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-05-19 13:52:41,658 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-19 13:52:41,712 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-05-19 13:52:41,712 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1125 ms
+2020-05-19 13:52:41,844 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-05-19 13:52:41,978 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-05-19 13:52:41,984 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data'
+2020-05-19 13:52:42,876 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 13:52:42,900 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-05-19 13:52:43,336 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-19 13:52:43,538 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-19 13:52:43,771 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-19 13:52:43,810 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-19 13:52:43,842 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-19 13:52:43,845 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VegasApplication in 3.81 seconds (JVM running for 4.534)
+2020-05-19 13:52:44,061 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(4)-192.168.43.74] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-19 13:52:44,061 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(4)-192.168.43.74] Initializing Servlet 'dispatcherServlet'
+2020-05-19 13:52:44,068 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(4)-192.168.43.74] Completed initialization in 6 ms
+2020-05-19 13:52:47,323 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-1] Credit Transaction  request for transaction id: 1823wsa70 
+2020-05-19 13:52:47,345 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [com.leo.vegas.exception.ApiException: Invalid User]
+2020-05-19 13:52:56,435 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('a' (code 97)) in numeric value: Decimal point not followed by a digit; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('a' (code 97)) in numeric value: Decimal point not followed by a digit
+ at [Source: (PushbackInputStream); line: 2, column: 17]]
+2020-05-19 13:53:12,792 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-3] Credit Transaction  request for transaction id: 1823wsa70 
+2020-05-19 13:53:12,794 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [com.leo.vegas.exception.ApiException: Invalid User]
+2020-05-19 13:53:18,732 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-4] Credit Transaction  request for transaction id: 1823wsa70 
+2020-05-19 13:53:18,742 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [com.leo.vegas.exception.ApiException: Transaction id already exists]
+2020-05-19 13:55:17,809 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-19 13:55:17,810 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 13:55:17,814 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-05-19 13:55:17,816 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-05-19 13:55:36,497 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VegasApplication on JKP.local with PID 94060 (/Users/jyotikumarpoddar/dev/dev-java/vegas/build/classes/java/main started by jyotikumarpoddar in /Users/jyotikumarpoddar/dev/dev-java/vegas)
+2020-05-19 13:55:36,505 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: development
+2020-05-19 13:55:36,564 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-19 13:55:36,565 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-19 13:55:37,237 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-19 13:55:37,285 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 41ms. Found 2 JPA repository interfaces.
+2020-05-19 13:55:37,743 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-05-19 13:55:37,750 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-19 13:55:37,750 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-05-19 13:55:37,750 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-19 13:55:37,812 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-05-19 13:55:37,813 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1248 ms
+2020-05-19 13:55:37,955 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-05-19 13:55:38,101 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-05-19 13:55:38,106 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data'
+2020-05-19 13:55:39,113 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 13:55:39,141 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-05-19 13:55:39,642 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-19 13:55:39,854 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-19 13:55:40,088 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-19 13:55:40,123 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-19 13:55:40,153 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-19 13:55:40,156 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VegasApplication in 4.4 seconds (JVM running for 5.867)
+2020-05-19 13:55:40,568 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(7)-192.168.43.74] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-19 13:55:40,569 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(7)-192.168.43.74] Initializing Servlet 'dispatcherServlet'
+2020-05-19 13:55:40,577 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(7)-192.168.43.74] Completed initialization in 7 ms
+2020-05-19 13:55:40,696 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-1] Credit Transaction  request for transaction id: 1823wsa70 
+2020-05-19 13:55:40,724 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [com.leo.vegas.exception.ApiException: Transaction id already exists]
+2020-05-19 13:55:42,071 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-2] Credit Transaction  request for transaction id: 1823wsa70 
+2020-05-19 13:55:42,075 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [com.leo.vegas.exception.ApiException: Transaction id already exists]
+2020-05-19 13:55:42,513 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-3] Credit Transaction  request for transaction id: 1823wsa70 
+2020-05-19 13:55:42,516 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [com.leo.vegas.exception.ApiException: Transaction id already exists]
+2020-05-19 13:55:42,726 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-4] Credit Transaction  request for transaction id: 1823wsa70 
+2020-05-19 13:55:42,732 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [com.leo.vegas.exception.ApiException: Transaction id already exists]
+2020-05-19 13:55:42,896 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-5] Credit Transaction  request for transaction id: 1823wsa70 
+2020-05-19 13:55:42,899 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [com.leo.vegas.exception.ApiException: Transaction id already exists]
+2020-05-19 13:55:43,093 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-6] Credit Transaction  request for transaction id: 1823wsa70 
+2020-05-19 13:55:43,096 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-6] Resolved [com.leo.vegas.exception.ApiException: Transaction id already exists]
+2020-05-19 13:55:46,505 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-7] Credit Transaction  request for transaction id: 1823wsa70 
+2020-05-19 13:55:46,510 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-7] Resolved [com.leo.vegas.exception.ApiException: Transaction id already exists]
+2020-05-19 13:56:29,286 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-19 13:56:29,287 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 13:56:29,290 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-05-19 13:56:29,291 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-05-19 14:04:48,532 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VegasApplication on JKP.local with PID 94128 (/Users/jyotikumarpoddar/dev/dev-java/vegas/build/classes/java/main started by jyotikumarpoddar in /Users/jyotikumarpoddar/dev/dev-java/vegas)
+2020-05-19 14:04:48,534 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: development
+2020-05-19 14:04:48,570 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-19 14:04:48,570 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-19 14:04:49,534 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-19 14:04:49,588 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 46ms. Found 2 JPA repository interfaces.
+2020-05-19 14:04:50,251 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-05-19 14:04:50,272 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-19 14:04:50,274 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-05-19 14:04:50,274 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-19 14:04:50,474 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-05-19 14:04:50,475 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1904 ms
+2020-05-19 14:04:50,730 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-05-19 14:04:50,931 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-05-19 14:04:50,939 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data'
+2020-05-19 14:04:52,543 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 14:04:52,571 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-05-19 14:04:53,173 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-19 14:04:53,420 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-19 14:04:53,653 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-19 14:04:53,693 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-19 14:04:53,727 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-19 14:04:53,729 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VegasApplication in 5.696 seconds (JVM running for 7.185)
+2020-05-19 14:04:54,058 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(6)-192.168.43.74] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-19 14:04:54,058 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(6)-192.168.43.74] Initializing Servlet 'dispatcherServlet'
+2020-05-19 14:04:54,066 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(6)-192.168.43.74] Completed initialization in 8 ms
+2020-05-19 14:07:03,985 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.leo.vegas.controller.TransactionController.creditWalletAccount(com.leo.vegas.model.TransactionModel)]
+2020-05-19 14:07:38,669 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-2] Credit Transaction  request for transaction id: 1823wsa70 
+2020-05-19 14:07:38,681 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [com.leo.vegas.exception.ApiException: Transaction id already exists]
+2020-05-19 14:09:01,304 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-3] Credit Transaction  request for transaction id: 1823ws11a70 
+2020-05-19 14:09:01,404 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-8080-exec-3] Account balance updated to 400.00  for transaction id 1823ws11a70
+2020-05-19 14:10:12,830 INFO com.leo.vegas.controller.TransactionController [http-nio-8080-exec-5] Credit Transaction  request for transaction id: 1823wsa7099 
+2020-05-19 14:10:12,836 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-8080-exec-5] Account balance updated to 500.00  for transaction id 1823wsa7099
+2020-05-19 14:16:22,336 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-16] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-19 14:16:22,339 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-16] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 14:16:22,343 INFO com.zaxxer.hikari.HikariDataSource [Thread-16] HikariPool-1 - Shutdown initiated...
+2020-05-19 14:16:22,356 INFO com.zaxxer.hikari.HikariDataSource [Thread-16] HikariPool-1 - Shutdown completed.
+2020-05-19 14:16:22,859 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VegasApplication on JKP.local with PID 94128 (/Users/jyotikumarpoddar/dev/dev-java/vegas/build/classes/java/main started by jyotikumarpoddar in /Users/jyotikumarpoddar/dev/dev-java/vegas)
+2020-05-19 14:16:22,860 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-05-19 14:16:23,160 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-19 14:16:23,171 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 10ms. Found 2 JPA repository interfaces.
+2020-05-19 14:16:28,316 INFO org.springframework.boot.StartupInfoLogger [Test worker] Starting VegasApplicationTests on JKP.local with PID 94200 (started by jyotikumarpoddar in /Users/jyotikumarpoddar/dev/dev-java/vegas)
+2020-05-19 14:16:28,318 INFO org.springframework.boot.SpringApplication [Test worker] No active profile set, falling back to default profiles: default
+2020-05-19 14:16:29,419 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Test worker] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-19 14:16:29,493 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Test worker] Finished Spring Data repository scanning in 65ms. Found 2 JPA repository interfaces.
+2020-05-19 14:16:30,188 INFO com.zaxxer.hikari.HikariDataSource [Test worker] HikariPool-1 - Starting...
+2020-05-19 14:16:30,448 INFO com.zaxxer.hikari.HikariDataSource [Test worker] HikariPool-1 - Start completed.
+2020-05-19 14:16:31,901 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Test worker] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 14:16:33,049 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [Test worker] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-19 14:16:33,505 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-19 14:16:34,044 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [Test worker] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./testDb'
+2020-05-19 14:16:34,127 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [Test worker] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-19 14:16:34,195 INFO org.springframework.boot.StartupInfoLogger [Test worker] Started VegasApplicationTests in 6.5 seconds (JVM running for 8.213)
+2020-05-19 14:16:34,441 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [Test worker] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.leo.vegas.controller.TransactionControllerMvcTest], using SpringBootContextLoader
+2020-05-19 14:16:34,442 INFO org.springframework.test.context.support.AbstractContextLoader [Test worker] Could not detect default resource locations for test class [com.leo.vegas.controller.TransactionControllerMvcTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-05-19 14:16:34,442 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [Test worker] Could not detect default configuration classes for test class [com.leo.vegas.controller.TransactionControllerMvcTest]: TransactionControllerMvcTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-05-19 14:16:34,468 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [Test worker] Found @SpringBootConfiguration com.leo.vegas.VegasApplication for test class com.leo.vegas.controller.TransactionControllerMvcTest
+2020-05-19 14:16:34,470 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [Test worker] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-05-19 14:16:34,471 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [Test worker] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6aae4415, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@45c33a03, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3b31c58a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5667dd4b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4e71a57e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@123e9d91, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@271617c9, org.springframework.test.context.event.EventPublishingTestExecutionListener@4f731be5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@cea0d20, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6adecb39, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7de121f4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2a1ab19e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@76c53af0]
+2020-05-19 14:16:34,502 INFO org.springframework.boot.StartupInfoLogger [Test worker] Starting TransactionControllerMvcTest on JKP.local with PID 94200 (started by jyotikumarpoddar in /Users/jyotikumarpoddar/dev/dev-java/vegas)
+2020-05-19 14:16:34,504 INFO org.springframework.boot.SpringApplication [Test worker] No active profile set, falling back to default profiles: default
+2020-05-19 14:16:34,931 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-19 14:16:35,090 INFO org.springframework.mock.web.MockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2020-05-19 14:16:35,091 INFO org.springframework.web.servlet.FrameworkServlet [Test worker] Initializing Servlet ''
+2020-05-19 14:16:35,104 INFO org.springframework.web.servlet.FrameworkServlet [Test worker] Completed initialization in 13 ms
+2020-05-19 14:16:35,125 INFO org.springframework.boot.StartupInfoLogger [Test worker] Started TransactionControllerMvcTest in 0.647 seconds (JVM running for 9.143)
+2020-05-19 14:16:35,207 INFO com.leo.vegas.controller.TransactionController [Test worker] Fetching account details for user id: user1@gmail.com
+2020-05-19 14:16:35,483 INFO com.leo.vegas.controller.TransactionController [Test worker] Credit Transaction  request for transaction id: 19909001A3 
+2020-05-19 14:16:35,512 INFO com.leo.vegas.controller.TransactionController [Test worker] Fetching transaction details for user id: user1@gmail.com
+2020-05-19 14:16:35,539 INFO com.leo.vegas.controller.TransactionController [Test worker] Debit Transaction  request for transaction id: 19909001A3 
+2020-05-19 14:16:35,550 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [Test worker] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.leo.vegas.controller.TransactionControllerIntegrationTest], using SpringBootContextLoader
+2020-05-19 14:16:35,551 INFO org.springframework.test.context.support.AbstractContextLoader [Test worker] Could not detect default resource locations for test class [com.leo.vegas.controller.TransactionControllerIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-05-19 14:16:35,551 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [Test worker] Could not detect default configuration classes for test class [com.leo.vegas.controller.TransactionControllerIntegrationTest]: TransactionControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-05-19 14:16:35,554 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [Test worker] Found @SpringBootConfiguration com.leo.vegas.VegasApplication for test class com.leo.vegas.controller.TransactionControllerIntegrationTest
+2020-05-19 14:16:35,556 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [Test worker] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-05-19 14:16:35,557 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [Test worker] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@11b7bdc2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@40a103de, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3ee45ffe, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5ce2b1ca, org.springframework.test.context.support.DirtiesContextTestExecutionListener@70175e39, org.springframework.test.context.transaction.TransactionalTestExecutionListener@38601c16, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@24e7bf4b, org.springframework.test.context.event.EventPublishingTestExecutionListener@6d4236fc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@276e5bfb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1f5673ac, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6529aea, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7a5ba90a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2fbf9439]
+2020-05-19 14:16:35,595 INFO org.springframework.boot.StartupInfoLogger [Test worker] Starting TransactionControllerIntegrationTest on JKP.local with PID 94200 (started by jyotikumarpoddar in /Users/jyotikumarpoddar/dev/dev-java/vegas)
+2020-05-19 14:16:35,596 INFO org.springframework.boot.SpringApplication [Test worker] No active profile set, falling back to default profiles: default
+2020-05-19 14:16:35,843 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Test worker] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-19 14:16:35,857 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Test worker] Finished Spring Data repository scanning in 13ms. Found 2 JPA repository interfaces.
+2020-05-19 14:16:36,190 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [Test worker] Tomcat initialized with port(s): 0 (http)
+2020-05-19 14:16:36,201 INFO org.apache.juli.logging.DirectJDKLog [Test worker] Initializing ProtocolHandler ["http-nio-auto-1"]
+2020-05-19 14:16:36,203 INFO org.apache.juli.logging.DirectJDKLog [Test worker] Starting service [Tomcat]
+2020-05-19 14:16:36,204 INFO org.apache.juli.logging.DirectJDKLog [Test worker] Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-19 14:16:36,333 INFO org.apache.juli.logging.DirectJDKLog [Test worker] Initializing Spring embedded WebApplicationContext
+2020-05-19 14:16:36,333 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [Test worker] Root WebApplicationContext: initialization completed in 735 ms
+2020-05-19 14:16:36,456 INFO com.zaxxer.hikari.HikariDataSource [Test worker] HikariPool-2 - Starting...
+2020-05-19 14:16:36,458 INFO com.zaxxer.hikari.HikariDataSource [Test worker] HikariPool-2 - Start completed.
+2020-05-19 14:16:36,459 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [Test worker] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./testDb'
+2020-05-19 14:16:36,801 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Test worker] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 14:16:36,956 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [Test worker] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-19 14:16:37,078 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-19 14:16:37,320 INFO org.apache.juli.logging.DirectJDKLog [Test worker] Initializing Spring TestDispatcherServlet ''
+2020-05-19 14:16:37,321 INFO org.springframework.web.servlet.FrameworkServlet [Test worker] Initializing Servlet ''
+2020-05-19 14:16:37,329 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [Test worker] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-19 14:16:37,359 INFO org.springframework.web.servlet.FrameworkServlet [Test worker] Completed initialization in 38 ms
+2020-05-19 14:16:37,401 INFO org.apache.juli.logging.DirectJDKLog [Test worker] Starting ProtocolHandler ["http-nio-auto-1"]
+2020-05-19 14:16:37,421 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [Test worker] Tomcat started on port(s): 61493 (http) with context path ''
+2020-05-19 14:16:37,422 INFO org.springframework.boot.StartupInfoLogger [Test worker] Started TransactionControllerIntegrationTest in 1.861 seconds (JVM running for 11.44)
+2020-05-19 14:16:38,786 INFO org.apache.juli.logging.DirectJDKLog [http-nio-auto-1-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-19 14:16:38,787 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-auto-1-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-05-19 14:16:38,789 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-auto-1-exec-1] Completed initialization in 2 ms
+2020-05-19 14:16:38,813 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-1] Credit Transaction  request for transaction id: 1589886998456 
+2020-05-19 14:16:38,873 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-1] Account balance updated to 10.00  for transaction id 1589886998456
+2020-05-19 14:16:38,898 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-1] ================ 10.00
+2020-05-19 14:16:39,465 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-2] Credit Transaction  request for transaction id: 1589886999459 
+2020-05-19 14:16:39,474 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-2] Account balance updated to 20.00  for transaction id 1589886999459
+2020-05-19 14:16:39,481 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-2] ================ 20.00
+2020-05-19 14:16:40,466 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-3] Credit Transaction  request for transaction id: 1589887000463 
+2020-05-19 14:16:40,475 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-3] Account balance updated to 30.00  for transaction id 1589887000463
+2020-05-19 14:16:40,481 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-3] ================ 30.00
+2020-05-19 14:16:41,466 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-4] Credit Transaction  request for transaction id: 1589887001463 
+2020-05-19 14:16:41,475 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-4] Account balance updated to 40.00  for transaction id 1589887001463
+2020-05-19 14:16:41,480 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-4] ================ 40.00
+2020-05-19 14:16:42,469 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-5] Credit Transaction  request for transaction id: 1589887002465 
+2020-05-19 14:16:42,477 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-5] Account balance updated to 50.00  for transaction id 1589887002465
+2020-05-19 14:16:42,483 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-5] ================ 50.00
+2020-05-19 14:16:43,474 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-6] Credit Transaction  request for transaction id: 1589887003470 
+2020-05-19 14:16:43,480 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-6] Account balance updated to 60.00  for transaction id 1589887003470
+2020-05-19 14:16:43,485 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-6] ================ 60.00
+2020-05-19 14:16:44,475 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-7] Credit Transaction  request for transaction id: 1589887004470 
+2020-05-19 14:16:44,482 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-7] Account balance updated to 70.00  for transaction id 1589887004470
+2020-05-19 14:16:44,489 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-7] ================ 70.00
+2020-05-19 14:16:45,476 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-8] Credit Transaction  request for transaction id: 1589887005471 
+2020-05-19 14:16:45,484 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-8] Account balance updated to 80.00  for transaction id 1589887005471
+2020-05-19 14:16:45,490 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-8] ================ 80.00
+2020-05-19 14:16:46,476 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-9] Credit Transaction  request for transaction id: 1589887006472 
+2020-05-19 14:16:46,484 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-9] Account balance updated to 90.00  for transaction id 1589887006472
+2020-05-19 14:16:46,487 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-9] ================ 90.00
+2020-05-19 14:16:47,478 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-10] Credit Transaction  request for transaction id: 1589887007473 
+2020-05-19 14:16:47,487 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-10] Account balance updated to 100.00  for transaction id 1589887007473
+2020-05-19 14:16:47,495 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-10] ================ 100.00
+2020-05-19 14:16:47,498 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-1] Fetching account details for user id: user1@gmail.com
+2020-05-19 14:16:47,531 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-19 14:16:47,533 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-19 14:16:47,533 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-19 14:16:47,534 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 14:16:47,537 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 14:16:47,541 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-05-19 14:16:47,541 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-2 - Shutdown initiated...
+2020-05-19 14:16:47,547 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-05-19 14:16:47,551 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-2 - Shutdown completed.
+2020-05-19 14:20:24,566 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VegasApplication on JKP.local with PID 94260 (/Users/jyotikumarpoddar/dev/dev-java/vegas/build/classes/java/main started by jyotikumarpoddar in /Users/jyotikumarpoddar/dev/dev-java/vegas)
+2020-05-19 14:20:24,570 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-05-19 14:20:24,602 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-19 14:20:24,602 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-19 14:20:25,265 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-19 14:20:25,315 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 44ms. Found 2 JPA repository interfaces.
+2020-05-19 14:20:25,742 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-05-19 14:20:25,748 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-19 14:20:25,749 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-05-19 14:20:25,750 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-19 14:20:25,805 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-05-19 14:20:25,805 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1202 ms
+2020-05-19 14:20:25,924 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-05-19 14:20:26,055 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-05-19 14:20:26,063 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data'
+2020-05-19 14:20:27,096 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 14:20:27,120 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-05-19 14:20:27,568 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-19 14:20:27,769 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-19 14:20:28,000 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-19 14:20:28,035 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-19 14:20:28,064 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-19 14:20:28,067 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VegasApplication in 3.988 seconds (JVM running for 4.939)
+2020-05-19 14:20:28,302 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(3)-192.168.43.74] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-19 14:20:28,303 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-192.168.43.74] Initializing Servlet 'dispatcherServlet'
+2020-05-19 14:20:28,309 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-192.168.43.74] Completed initialization in 6 ms
+2020-05-19 14:20:28,987 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-19 14:20:28,989 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 14:20:28,994 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-05-19 14:20:28,997 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-05-19 15:18:39,301 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VegasApplication on JKP.local with PID 94429 (/Users/jyotikumarpoddar/dev/dev-java/vegas/build/classes/java/main started by jyotikumarpoddar in /Users/jyotikumarpoddar/dev/dev-java/vegas)
+2020-05-19 15:18:39,336 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-05-19 15:18:39,393 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-19 15:18:39,394 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-19 15:18:40,262 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-19 15:18:40,319 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 47ms. Found 2 JPA repository interfaces.
+2020-05-19 15:18:40,872 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-05-19 15:18:40,881 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-19 15:18:40,882 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-05-19 15:18:40,882 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-19 15:18:40,950 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-05-19 15:18:40,950 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1556 ms
+2020-05-19 15:18:41,124 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-05-19 15:18:41,366 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-05-19 15:18:41,372 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data'
+2020-05-19 15:18:42,779 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 15:18:42,809 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-05-19 15:18:43,295 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-19 15:18:43,514 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-19 15:18:43,725 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-19 15:18:43,766 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-19 15:18:43,800 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-19 15:18:43,803 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VegasApplication in 5.012 seconds (JVM running for 5.855)
+2020-05-19 15:18:44,291 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(7)-192.168.99.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-19 15:18:44,291 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(7)-192.168.99.1] Initializing Servlet 'dispatcherServlet'
+2020-05-19 15:18:44,298 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(7)-192.168.99.1] Completed initialization in 7 ms
+2020-05-19 15:24:34,329 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-19 15:24:34,331 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 15:24:34,335 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-05-19 15:24:34,338 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-05-19 15:25:23,833 INFO org.springframework.boot.StartupInfoLogger [Test worker] Starting VegasApplicationTests on JKP.local with PID 94513 (started by jyotikumarpoddar in /Users/jyotikumarpoddar/dev/dev-java/vegas)
+2020-05-19 15:25:23,835 INFO org.springframework.boot.SpringApplication [Test worker] No active profile set, falling back to default profiles: default
+2020-05-19 15:25:24,597 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Test worker] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-19 15:25:24,660 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Test worker] Finished Spring Data repository scanning in 54ms. Found 2 JPA repository interfaces.
+2020-05-19 15:25:25,246 INFO com.zaxxer.hikari.HikariDataSource [Test worker] HikariPool-1 - Starting...
+2020-05-19 15:25:25,471 INFO com.zaxxer.hikari.HikariDataSource [Test worker] HikariPool-1 - Start completed.
+2020-05-19 15:25:26,901 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Test worker] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 15:25:27,888 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [Test worker] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-19 15:25:28,239 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-19 15:25:28,786 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [Test worker] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./testDb'
+2020-05-19 15:25:28,851 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [Test worker] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-19 15:25:28,906 INFO org.springframework.boot.StartupInfoLogger [Test worker] Started VegasApplicationTests in 5.61 seconds (JVM running for 6.831)
+2020-05-19 15:25:29,129 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [Test worker] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.leo.vegas.controller.TransactionControllerMvcTest], using SpringBootContextLoader
+2020-05-19 15:25:29,130 INFO org.springframework.test.context.support.AbstractContextLoader [Test worker] Could not detect default resource locations for test class [com.leo.vegas.controller.TransactionControllerMvcTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-05-19 15:25:29,131 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [Test worker] Could not detect default configuration classes for test class [com.leo.vegas.controller.TransactionControllerMvcTest]: TransactionControllerMvcTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-05-19 15:25:29,157 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [Test worker] Found @SpringBootConfiguration com.leo.vegas.VegasApplication for test class com.leo.vegas.controller.TransactionControllerMvcTest
+2020-05-19 15:25:29,158 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [Test worker] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-05-19 15:25:29,159 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [Test worker] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1303b09a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@72f7d894, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@19dd62d3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6a7d7d72, org.springframework.test.context.support.DirtiesContextTestExecutionListener@64f487c7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@280bd0b5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5a32e49d, org.springframework.test.context.event.EventPublishingTestExecutionListener@5ba58444, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1b2fea48, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6dd70fe0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@208c08cb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@57fc3f3a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3365e227]
+2020-05-19 15:25:29,216 INFO org.springframework.boot.StartupInfoLogger [Test worker] Starting TransactionControllerMvcTest on JKP.local with PID 94513 (started by jyotikumarpoddar in /Users/jyotikumarpoddar/dev/dev-java/vegas)
+2020-05-19 15:25:29,219 INFO org.springframework.boot.SpringApplication [Test worker] No active profile set, falling back to default profiles: default
+2020-05-19 15:25:29,653 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-19 15:25:29,793 INFO org.springframework.mock.web.MockServletContext [Test worker] Initializing Spring TestDispatcherServlet ''
+2020-05-19 15:25:29,794 INFO org.springframework.web.servlet.FrameworkServlet [Test worker] Initializing Servlet ''
+2020-05-19 15:25:29,817 INFO org.springframework.web.servlet.FrameworkServlet [Test worker] Completed initialization in 22 ms
+2020-05-19 15:25:29,840 INFO org.springframework.boot.StartupInfoLogger [Test worker] Started TransactionControllerMvcTest in 0.676 seconds (JVM running for 7.766)
+2020-05-19 15:25:29,941 INFO com.leo.vegas.controller.TransactionController [Test worker] Fetching account details for user id: user1@gmail.com
+2020-05-19 15:25:30,197 INFO com.leo.vegas.controller.TransactionController [Test worker] Credit Transaction  request for transaction id: 19909001A3 
+2020-05-19 15:25:30,223 INFO com.leo.vegas.controller.TransactionController [Test worker] Fetching transaction details for user id: user1@gmail.com
+2020-05-19 15:25:30,250 INFO com.leo.vegas.controller.TransactionController [Test worker] Debit Transaction  request for transaction id: 19909001A3 
+2020-05-19 15:25:30,258 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [Test worker] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.leo.vegas.controller.TransactionControllerIntegrationTest], using SpringBootContextLoader
+2020-05-19 15:25:30,259 INFO org.springframework.test.context.support.AbstractContextLoader [Test worker] Could not detect default resource locations for test class [com.leo.vegas.controller.TransactionControllerIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-05-19 15:25:30,259 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [Test worker] Could not detect default configuration classes for test class [com.leo.vegas.controller.TransactionControllerIntegrationTest]: TransactionControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-05-19 15:25:30,262 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [Test worker] Found @SpringBootConfiguration com.leo.vegas.VegasApplication for test class com.leo.vegas.controller.TransactionControllerIntegrationTest
+2020-05-19 15:25:30,263 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [Test worker] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-05-19 15:25:30,264 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [Test worker] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@90a942a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2428bfeb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5bf31f63, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7e0a965b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@23fcf674, org.springframework.test.context.transaction.TransactionalTestExecutionListener@42cac207, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@101d53a, org.springframework.test.context.event.EventPublishingTestExecutionListener@2b93230f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6f183f5f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7b560241, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@74f1a014, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@46c87ede, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6804439f]
+2020-05-19 15:25:30,298 INFO org.springframework.boot.StartupInfoLogger [Test worker] Starting TransactionControllerIntegrationTest on JKP.local with PID 94513 (started by jyotikumarpoddar in /Users/jyotikumarpoddar/dev/dev-java/vegas)
+2020-05-19 15:25:30,299 INFO org.springframework.boot.SpringApplication [Test worker] No active profile set, falling back to default profiles: default
+2020-05-19 15:25:30,501 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Test worker] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-19 15:25:30,514 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Test worker] Finished Spring Data repository scanning in 12ms. Found 2 JPA repository interfaces.
+2020-05-19 15:25:30,781 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [Test worker] Tomcat initialized with port(s): 0 (http)
+2020-05-19 15:25:30,797 INFO org.apache.juli.logging.DirectJDKLog [Test worker] Initializing ProtocolHandler ["http-nio-auto-1"]
+2020-05-19 15:25:30,798 INFO org.apache.juli.logging.DirectJDKLog [Test worker] Starting service [Tomcat]
+2020-05-19 15:25:30,799 INFO org.apache.juli.logging.DirectJDKLog [Test worker] Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-19 15:25:30,903 INFO org.apache.juli.logging.DirectJDKLog [Test worker] Initializing Spring embedded WebApplicationContext
+2020-05-19 15:25:30,904 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [Test worker] Root WebApplicationContext: initialization completed in 603 ms
+2020-05-19 15:25:31,014 INFO com.zaxxer.hikari.HikariDataSource [Test worker] HikariPool-2 - Starting...
+2020-05-19 15:25:31,016 INFO com.zaxxer.hikari.HikariDataSource [Test worker] HikariPool-2 - Start completed.
+2020-05-19 15:25:31,016 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [Test worker] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./testDb'
+2020-05-19 15:25:31,324 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Test worker] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 15:25:31,461 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [Test worker] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-19 15:25:31,561 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-19 15:25:31,760 INFO org.apache.juli.logging.DirectJDKLog [Test worker] Initializing Spring TestDispatcherServlet ''
+2020-05-19 15:25:31,760 INFO org.springframework.web.servlet.FrameworkServlet [Test worker] Initializing Servlet ''
+2020-05-19 15:25:31,767 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [Test worker] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-19 15:25:31,797 INFO org.springframework.web.servlet.FrameworkServlet [Test worker] Completed initialization in 37 ms
+2020-05-19 15:25:31,834 INFO org.apache.juli.logging.DirectJDKLog [Test worker] Starting ProtocolHandler ["http-nio-auto-1"]
+2020-05-19 15:25:31,854 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [Test worker] Tomcat started on port(s): 62140 (http) with context path ''
+2020-05-19 15:25:31,856 INFO org.springframework.boot.StartupInfoLogger [Test worker] Started TransactionControllerIntegrationTest in 1.589 seconds (JVM running for 9.781)
+2020-05-19 15:25:33,167 INFO org.apache.juli.logging.DirectJDKLog [http-nio-auto-1-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-19 15:25:33,168 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-auto-1-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-05-19 15:25:33,169 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-auto-1-exec-1] Completed initialization in 1 ms
+2020-05-19 15:25:33,189 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-1] Credit Transaction  request for transaction id: 1589891132884 
+2020-05-19 15:25:33,241 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-1] Account balance updated to 10.00  for transaction id 1589891132884
+2020-05-19 15:25:33,261 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-1] ================ 10.00
+2020-05-19 15:25:33,894 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-2] Credit Transaction  request for transaction id: 1589891133887 
+2020-05-19 15:25:33,901 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-2] Account balance updated to 20.00  for transaction id 1589891133887
+2020-05-19 15:25:33,907 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-2] ================ 20.00
+2020-05-19 15:25:34,893 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-3] Credit Transaction  request for transaction id: 1589891134889 
+2020-05-19 15:25:34,898 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-3] Account balance updated to 30.00  for transaction id 1589891134889
+2020-05-19 15:25:34,902 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-3] ================ 30.00
+2020-05-19 15:25:35,897 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-4] Credit Transaction  request for transaction id: 1589891135893 
+2020-05-19 15:25:35,903 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-4] Account balance updated to 40.00  for transaction id 1589891135893
+2020-05-19 15:25:35,908 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-4] ================ 40.00
+2020-05-19 15:25:36,903 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-5] Credit Transaction  request for transaction id: 1589891136898 
+2020-05-19 15:25:36,908 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-5] Account balance updated to 50.00  for transaction id 1589891136898
+2020-05-19 15:25:36,912 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-5] ================ 50.00
+2020-05-19 15:25:37,904 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-6] Credit Transaction  request for transaction id: 1589891137899 
+2020-05-19 15:25:37,913 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-6] Account balance updated to 60.00  for transaction id 1589891137899
+2020-05-19 15:25:37,917 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-6] ================ 60.00
+2020-05-19 15:25:38,908 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-7] Credit Transaction  request for transaction id: 1589891138904 
+2020-05-19 15:25:38,914 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-7] Account balance updated to 70.00  for transaction id 1589891138904
+2020-05-19 15:25:38,919 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-7] ================ 70.00
+2020-05-19 15:25:39,912 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-8] Credit Transaction  request for transaction id: 1589891139907 
+2020-05-19 15:25:39,918 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-8] Account balance updated to 80.00  for transaction id 1589891139907
+2020-05-19 15:25:39,926 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-8] ================ 80.00
+2020-05-19 15:25:40,915 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-9] Credit Transaction  request for transaction id: 1589891140911 
+2020-05-19 15:25:40,920 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-9] Account balance updated to 90.00  for transaction id 1589891140911
+2020-05-19 15:25:40,925 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-9] ================ 90.00
+2020-05-19 15:25:41,920 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-10] Credit Transaction  request for transaction id: 1589891141916 
+2020-05-19 15:25:41,925 INFO com.leo.vegas.service.impl.WalletAccountServiceImpl [http-nio-auto-1-exec-10] Account balance updated to 100.00  for transaction id 1589891141916
+2020-05-19 15:25:41,929 INFO com.leo.vegas.controller.TransactionControllerIntegrationTest$1Task [pool-1-thread-10] ================ 100.00
+2020-05-19 15:25:41,931 INFO com.leo.vegas.controller.TransactionController [http-nio-auto-1-exec-1] Fetching account details for user id: user1@gmail.com
+2020-05-19 15:25:41,963 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-19 15:25:41,964 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-19 15:25:41,964 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-19 15:25:41,965 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 15:25:41,966 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 15:25:41,969 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-2 - Shutdown initiated...
+2020-05-19 15:25:41,969 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-05-19 15:25:41,983 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-05-19 15:25:41,987 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-2 - Shutdown completed.
