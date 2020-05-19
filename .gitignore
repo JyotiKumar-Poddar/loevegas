@@ -33,3 +33,4 @@ out/
 /data.mv.db
 /testDb.mv.db
 /testDb.trace.db
+/logs/
