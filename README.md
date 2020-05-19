@@ -29,6 +29,24 @@ application have default user that is user1@gmail.com and user id id mandatory.
 
 ## Posting request using curl
 
+
+### Request
+
+`GET /account/{userId}`
+
+### Response
+
+    {"userId":"user1@gmail.com","amount":500.00,"lastUpdate":"2020-05-19T14:10:12.835"}
+
+### Request
+
+`GET /transaction/{userId}`
+
+### Response
+
+    [{"transactionId":"188232sa70","transactionAmount":100.00,"transactionStatus":"COMPLETED","transactionType":"CREDIT"},{"transactionId":"18823wsa70","transactionAmount":100.00,"transactionStatus":"COMPLETED","transactionType":"CREDIT"},{"transactionId":"1823wsa70","transactionAmount":100.00,"transactionStatus":"COMPLETED","transactionType":"CREDIT"},{"transactionId":"1823ws11a70","transactionAmount":100.00,"transactionStatus":"COMPLETED","transactionType":"CREDIT"},{"transactionId":"1823wsa7099","transactionAmount":100.00,"transactionStatus":"COMPLETED","transactionType":"CREDIT"}]
+
+
 ### Request
 
 `POST /debit/`
@@ -37,4 +55,14 @@ application have default user that is user1@gmail.com and user id id mandatory.
 
 ### Response
 
-    {"transactionId":"1823wsa7099","transactionAmount":100,"transactionStatus":"COMPLETED","transactionType":"CREDIT"}
+    {"transactionId":"1823wsa7099","transactionAmount":100,"transactionStatus":"COMPLETED","transactionType":"DEBIT"}
+
+### Request
+
+`POST /credit/`
+
+    curl -X POST  http://localhost:8080/credit -H 'cache-control: no-cache' -H 'content-type: application/json' -d '{ "amount": 100, "userId": "user1@gmail.com", "transactionId": "1823wsa70" }'
+
+### Response
+
+    {"transactionId":"158298sa70","transactionAmount":100,"transactionStatus":"COMPLETED","transactionType":"CREDIT"}
