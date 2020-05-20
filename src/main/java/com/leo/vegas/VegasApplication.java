@@ -21,14 +21,16 @@ public class VegasApplication {
 
 	@Bean
 	ApplicationRunner initWallet(WalletAccountRepository repository) {
-		WalletAccount walletAccount = repository.findByUserId("user1@gmail.com");
-		if (walletAccount == null) {
-			walletAccount = new WalletAccount();
-			walletAccount.setAvailableBalance(BigDecimal.ZERO);
-			walletAccount.setUserId("user1@gmail.com");
-			repository.save(walletAccount);
-		}
-		return null;
+		return args -> {
+			WalletAccount walletAccount = repository.findByUserId("user1@gmail.com");
+			if (walletAccount == null) {
+				walletAccount = new WalletAccount();
+				walletAccount.setAvailableBalance(BigDecimal.ZERO);
+				walletAccount.setUserId("user1@gmail.com");
+				walletAccount.setVersionId(1L);
+				repository.save(walletAccount);
+			}
+		};
 	}
 
 }
