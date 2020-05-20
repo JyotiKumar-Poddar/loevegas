@@ -12,7 +12,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.math.BigDecimal;
 import java.util.Optional;
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -41,6 +40,7 @@ public class WalletAccountServiceImpl implements WalletAccountService {
 	public void debitWalletAccount(Long accountId, BigDecimal amount, String transactionId) {
 		lock.lock();
 		try {
+			entityManager.clear();
 			Optional<WalletAccount> walletAccount = walletAccountRepository.findById(accountId);
 			if (walletAccount.isPresent()) {
 				WalletAccount beforeUpdate = walletAccount.get();
