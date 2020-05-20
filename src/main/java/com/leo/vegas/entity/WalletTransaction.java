@@ -1,5 +1,7 @@
 package com.leo.vegas.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.leo.vegas.util.TransactionStatus;
 import com.leo.vegas.util.TransactionType;
 import lombok.AllArgsConstructor;
@@ -21,6 +23,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
+import javax.persistence.Version;
 import java.math.BigDecimal;
 
 /**
@@ -66,5 +69,9 @@ public class WalletTransaction extends Audit {
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "walletAccount_id")
 	public WalletAccount walletAccount;
+
+	@JsonIgnore
+	@Version
+	private Long versionId;
 
 }

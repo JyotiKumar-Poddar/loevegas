@@ -21,7 +21,9 @@ configurations {
 repositories {
     mavenCentral()
 }
-
+bootRun {
+    standardInput = System.in
+}
 dependencies {
     implementation 'org.modelmapper:modelmapper:2.3.7'
     runtimeOnly 'com.h2database:h2'

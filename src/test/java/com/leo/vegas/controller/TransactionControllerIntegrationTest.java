@@ -16,7 +16,6 @@ import com.squareup.okhttp.Response;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,10 +26,9 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.time.Instant;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Integration test to make sure end to end flow is working as expected multi threaded environment.
@@ -51,19 +49,20 @@ class TransactionControllerIntegrationTest {
 	private WalletAccountRepository walletAccountRepository;
 
 	@Test
-	public void integration_test_walletAccount() throws InterruptedException {
+	public void integration_test_walletAccount()  {
 
 
 		OkHttpClient client = new OkHttpClient();
 		HttpUrl.Builder urlBuilder = HttpUrl.parse("http://localhost:" + port + "/credit/").newBuilder();
 		String url = urlBuilder.build().toString();
 		ObjectMapper mapper = new ObjectMapper();
+		AtomicInteger transactionId = new AtomicInteger(1);
 		class Task implements Runnable {
 			@Override
 			public void run() {
 				try {
 					TransactionModel wt = new TransactionModel();
-					wt.setTransactionId(String.valueOf(Instant.now().toEpochMilli()));
+					wt.setTransactionId(String.valueOf(transactionId.incrementAndGet()));
 					wt.setAmount(BigDecimal.valueOf(10));
 					wt.setUserId("user1@gmail.com");
 					String json = mapper.writeValueAsString(wt);
@@ -77,7 +76,7 @@ class TransactionControllerIntegrationTest {
 					Response response = client.newCall(request).execute();
 					WalletTransactionModel walletTransactionModel = mapper.readValue(response.body().string(), WalletTransactionModel.class);
 					WalletAccount walletAccount = walletAccountRepository.findByUserId("user1@gmail.com");
-					log.info("================ {}", walletAccount.getAvailableBalance());
+					log.debug("Amount in wallet================ {}", walletAccount.getAvailableBalance());
 				} catch (Exception e) {
 					e.printStackTrace();
 					System.out.println("Error in processing request");
@@ -89,10 +88,8 @@ class TransactionControllerIntegrationTest {
 
 		ExecutorService executor = Executors.newFixedThreadPool(20);
 
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 1000; i++) {
 			Runnable worker = new Task();
-			/** wait time before creating new thread */
-			TimeUnit.MILLISECONDS.sleep(1000);
 			executor.execute(worker);
 		}
 		executor.shutdown();
@@ -116,7 +113,7 @@ class TransactionControllerIntegrationTest {
 			e.printStackTrace();
 		}
 
-		Assertions.assertEquals(BigDecimal.valueOf(100).intValue(), walletAccount.getAmount().intValue());
+		Assertions.assertEquals(BigDecimal.valueOf(10000).intValue(), walletAccount.getAmount().intValue());
 
 	}
 }

@@ -13,8 +13,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import static com.leo.vegas.exception.ApiErrorMessageAndCode.TRANSACTION_ID_EXISTS;
 import static com.leo.vegas.exception.ApiErrorMessageAndCode.invalidTransactionId;
@@ -26,24 +27,30 @@ public class WalletTransactionServiceImpl implements WalletTransactionService {
 	private final WalletTransactionRepository walletTransactionRepository;
 	private final WalletAccountRepository walletAccountRepository;
 	private final WalletAccountServiceImpl walletAccountServiceImpl;
+	@PersistenceContext(unitName = "entityManagerFactory")
+	private EntityManager entityManager;
 
 
 
 	@Autowired
 	public WalletTransactionServiceImpl(WalletTransactionRepository walletTransactionRepository,
 	                                    WalletAccountRepository walletAccountRepository,
-	                                    WalletAccountServiceImpl walletAccountServiceImpl) {
+	                                    WalletAccountServiceImpl walletAccountServiceImpl, EntityManager entityManager) {
 		this.walletTransactionRepository = walletTransactionRepository;
 		this.walletAccountRepository = walletAccountRepository;
 		this.walletAccountServiceImpl = walletAccountServiceImpl;
+		this.entityManager = entityManager;
 	}
 
 
 	@Override
 	public  WalletTransaction saveTransaction(TransactionModel transactionModel) {
-		WalletAccount walletAccount = walletAccountRepository.findByUserId(transactionModel.getUserId());
+
 		WalletTransaction transaction;
+		WalletAccount walletAccount;
+		entityManager.clear();
 		synchronized (this) {
+			walletAccount = walletAccountRepository.findByUserId(transactionModel.getUserId());
 			boolean transactionIdExists = walletTransactionRepository.existsByTransactionId(transactionModel.getTransactionId());
 			if (transactionIdExists) {
 				throw new ApiException(invalidTransactionId, TRANSACTION_ID_EXISTS);

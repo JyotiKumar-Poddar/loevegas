@@ -1,6 +1,7 @@
 package com.leo.vegas.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,6 +15,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.Version;
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -43,5 +45,9 @@ public class WalletAccount extends Audit {
 	@NonNull
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "walletAccount")
 	List<WalletTransaction> walletTransactions;
+
+	@JsonIgnore
+	@Version
+	private Long versionId;
 
 }
